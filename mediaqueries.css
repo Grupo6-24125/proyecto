@@ -1,0 +1,28 @@
+@media(max-width: 720px){
+    .izq>img {
+        width: 65px;
+        margin: 5px;  
+    }
+    .der>button{
+        width: 75px;
+    }
+    .tituloPagina{
+        font-size: 2em;
+    }
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .formContacto input[type="text"]{
+        width: 100%;
+        margin: 0;
+    }
+    .formContacto input[type="radio"]{
+        margin-right: 30px;
+    }
+    .textoPrincipal{
+        width: 100%;
+        font-size: 1em;
+    }
+}

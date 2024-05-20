@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div class="izq">
+            <img src="https://cdn-icons-png.flaticon.com/256/8091/8091562.png" alt="">
+        </div>
+        <div class="der">
+            <a href="index.html">Inicio</a>
+            <a href="quienes.html">Quienes Somos</a>
+            <a href="productos.html">Regalá una Cena</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+    <div class="portadaContacto"></div>
+    <h1 class="tituloPagina">Contactanos</h1>
+    <div class="container">
+        <main>
+            <article>
+                <p class="textoPrincipal">Si querés estrar al listado de donadores o trabajar con nosotros, envianos tus datos y nos estaremos contactando.</p>
+            </article>
+        </main>
+        <form id="formulario">
+            <div class="formContacto">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                <input type="text" name="localidad" id="localidad" placeholder="Localidad" >
+                <input type="text" name="telefono" id="telefono" placeholder="Telefono" >
+                <input type="text" name="mail" id="mail" placeholder="Mail" >
+                <div class="radio">
+                    <div class="donacion">
+                        <label for="donacion">Quiero hacer una Donacion</label>
+                        <input type="radio" name="opcion" id="donacion" value="donacion">
+                    </div>
+                    <div class="trabajar">
+                        <label for="trabajar">Quiero ser voluntario</label>
+                        <input type="radio" name="opcion" id="trabajar" value="trabajar">
+                    </div>
+                </div>
+                <div class="select">
+                    <label for="selectComida">Elegí tu Donación: </label>
+                    <select name="selectComida" id="selectComida">
+                        <option value="ninguna">Quiero ser voluntario!</option>
+                        <option value="fideosBolognesa">Fideos con Bolognesa</option>
+                        <option value="guisoLentejas">Guiso de Lentejas</option>
+                        <option value="pastelPapas">Pastel de Papas</option>
+                        <option value="arrozPollo">Arroz con Pollo</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </div>
+    <footer>Grupo 6 Comision 24125 NodeJS</footer> 
+</body>
+<script src="validacionContacto.js"></script>
+</html>

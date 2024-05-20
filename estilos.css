@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+}
+
+/* NAV */
+@keyframes iconoNav {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.nav{
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.izq>img {
+    width: 100px;
+    margin: 5px;  
+}
+.izq>img:hover{
+    animation: iconoNav 2s linear infinite;
+}
+.der{
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 5px; */
+}
+.der>a{
+    height: 100px;
+    width: 100px;
+    border-left: none;
+    border-right: solid 1px green;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: none;
+    /* border-radius: 4px; */
+    padding: 10px;
+    background-color:transparent;
+    align-content: center;
+    text-align: center;
+}
+.der>a:first-child{
+    border-left: solid 1px green;
+}
+.der a:link {
+    text-decoration: none;
+        color: greenyellow;
+}
+.der a:visited{
+    color: greenyellow;
+}
+.der>a:hover{
+    color: white;
+}
+
+/* INDEX */
+.tituloPortada{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/inicio.webp);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tituloPortada>h1{
+    font-size: 3em;
+}
+main{
+    margin-top: 20px;
+    display: flex;
+
+}
+.imagenesPie{
+    display: flex;
+    margin-top: 20px;
+}
+.imagenesPie>img{
+    width: 300px;
+}
+main>article{
+    margin: 0 50px;
+}
+.textoPrincipal{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1em;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.tituloPagina{
+    font-size: 4em;
+    text-align: center;
+}
+/* Quienes Somos */
+.portadaQuienes{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/portadaQuienes.jpeg);
+    
+    
+    /* background-size:cover; */
+}
+
+/* Cena */
+
+.portadaCena{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/regalaunacena.jpg);
+}
+
+.containerProductos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+.containerProductos>article{
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0px 0px 20px grey;
+    padding: 10px;
+}
+article>ul>li{
+    list-style: none;
+}
+
+/* Contacto */
+.portadaContacto{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://alfayomega.es/wp-content/uploads/2021/04/Comedor-San-Jose-Carabanchel1.jpg);
+}
+#formulario{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+.formContacto{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.formContacto>input[type="text"]{
+    height: 30px;
+    margin-bottom: 10px;
+    width: 18%;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px darkgreen;
+    box-shadow: 0 0 3px 1px green;
+    gap: 1%;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.radio label{
+    font-size: 14px;
+}
+.donacion, .trabajar{
+    border-radius: 4px;
+    border: solid 1px darkgreen;
+    box-shadow: 0 0 3px 1px green;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+}
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 10px;
+}
+.select{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.select>select{
+    appearance: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px darkgreen;
+    box-shadow: 0 0 3px 1px green;
+    margin-top: 5px;
+}
+.formContacto>button{
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px darkgreen;
+    box-shadow: 0 0 3px 1px green;
+    width: 100%;
+    margin-top: 10px;
+}
+._form>button:active{
+    box-shadow: inset 0 0px 5px 2px darkgreen;
+}
+
+/*FOOTER*/
+footer{
+    background-color: darkgreen;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
