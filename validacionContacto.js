@@ -9,7 +9,6 @@ const donacion = document.getElementById("donacion")
 const trabajar = document.getElementById("trabajar")
 
 form.addEventListener("submit", function(event){
-    event.preventDefault();
     if(nombre!=true && apellido!=true && localidad!=true && telefono!=true && mail!=true){
         alert("Completa todos los campos.")
     }
